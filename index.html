@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GG Builders - Professional Builders and Construction Company in Lucknow. Quality construction services for residential and commercial projects.">
+    <meta name="keywords" content="builders lucknow, construction company, gg builders, building contractors lucknow">
+    <title>GG Builders | Builders and Construction Company in Lucknow</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #f39c12;
+            --dark: #1a1a1a;
+            --light: #ecf0f1;
+            --white: #ffffff;
+            --text: #2c3e50;
+            --text-light: #7f8c8d;
+            --gradient: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+            background: var(--white);
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--dark);
+            color: var(--white);
+            padding: 0.7rem 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .top-bar-left, .top-bar-right {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-bar a {
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: var(--accent);
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            box-shadow: 0 2px 25px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.8rem;
+            color: var(--white);
+            font-weight: 700;
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .logo-text h1 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark);
+            letter-spacing: 3px;
+            line-height: 1;
+        }
+
+        .logo-text p {
+            font-size: 0.7rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--secondary);
+            transition: width 0.3s;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        }
+
+        .nav-menu a:hover::before {
+            width: 100%;
+        }
+
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+
+        .quote-btn {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 0.9rem 2.5rem;
+            border-radius: 0;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+        }
+
+        .quote-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(231, 76, 60, 0.5);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 30px;
+            height: 3px;
+            background: var(--dark);
+            border-radius: 0;
+            transition: all 0.3s;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(9px, 9px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--dark);
+        }
+
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(44, 62, 80, 0.75) 100%);
+        }
+
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255,255,255,0.03) 2px,
+                rgba(255,255,255,0.03) 4px
+            );
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            color: var(--white);
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(231, 76, 60, 0.2);
+            border-left: 4px solid var(--secondary);
+            color: var(--accent);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            animation: fadeInLeft 0.8s ease-out;
+        }
+
+        .hero-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 5.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+            text-transform: uppercase;
+        }
+
+        .hero-title .highlight {
+            color: var(--secondary);
+            position: relative;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--white);
+            box-shadow: 0 5px 25px rgba(231, 76, 60, 0.4);
+            clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 35px rgba(231, 76, 60, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 3px solid var(--white);
+            clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--dark);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--secondary);
+            padding: 3rem 2rem;
+            position: relative;
+            clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+            margin-top: -50px;
+        }
+
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+        }
+
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            position: relative;
+            z-index: 1;
+            padding: 2rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: var(--white);
+        }
+
+        .stat-number {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 4.5rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: rgba(231, 76, 60, 0.1);
+            border-left: 4px solid var(--secondary);
+            color: var(--secondary);
+            padding: 0.5rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 3.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-description {
+            color: var(--text-light);
+            max-width: 700px;
+            font-size: 1.1rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-images {
+            position: relative;
+            height: 600px;
+        }
+
+        .about-img-main {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 75%;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        }
+
+        .about-img-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-img-secondary {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 65%;
+            height: 55%;
+            overflow: hidden;
+            border: 8px solid var(--white);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            clip-path: polygon(5% 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .about-img-secondary img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-badge {
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            background: var(--gradient);
+            color: var(--white);
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(231, 76, 60, 0.5);
+            z-index: 3;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+
+        .about-badge-number {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 3.5rem;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .about-badge-text {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-content h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light);
+            clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-weight: 700;
+            color: var(--text);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--light);
+            position: relative;
+        }
+
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 50px,
+                rgba(0,0,0,0.02) 50px,
+                rgba(0,0,0,0.02) 100px
+            );
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-card {
+            background: var(--white);
+            overflow: hidden;
+            transition: all 0.4s;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            position: relative;
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        .service-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.15);
+        }
+
+        .service-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            z-index: 2;
+        }
+
+        .service-content {
+            padding: 2.5rem 2rem;
+        }
+
+        .service-content h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .service-content p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-link {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .service-link:hover {
+            gap: 1rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .projects-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 2rem;
+            background: var(--white);
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gradient);
+            border-color: var(--secondary);
+            color: var(--white);
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .project-card {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.2);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.95) 0%, transparent 70%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-category {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 0.4rem 1rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            display: inline-block;
+            align-self: flex-start;
+            font-weight: 700;
+            clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+        }
+
+        .project-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2rem;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .project-location {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--dark);
+            color: var(--white);
+            position: relative;
+            clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 20px,
+                rgba(255,255,255,0.02) 20px,
+                rgba(255,255,255,0.02) 40px
+            );
+        }
+
+        .testimonials .section-label {
+            background: rgba(231, 76, 60, 0.2);
+            color: var(--accent);
+        }
+
+        .testimonials .section-title {
+            color: var(--white);
+        }
+
+        .testimonials .section-description {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .testimonials-slider {
+            max-width: 1000px;
+            margin: 3rem auto 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+        }
+
+        .quote-mark {
+            font-size: 5rem;
+            color: var(--secondary);
+            line-height: 1;
+            margin-bottom: 1rem;
+            opacity: 0.3;
+        }
+
+        .testimonial-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .author-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary);
+        }
+
+        .author-info h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .author-info p {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+
+        .slider-dot.active {
+            background: var(--secondary);
+            width: 40px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 2rem;
+            background: var(--light);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 2rem;
+            background: var(--white);
+            transition: all 0.3s;
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: var(--text-light);
+            line-height: 1.6;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            color: var(--secondary);
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+        }
+
+        .form-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            font-family: 'Barlow', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--gradient);
+            color: var(--white);
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .success-message {
+            display: none;
+            background: #27ae60;
+            color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 700;
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .success-message.show {
+            display: block;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-about h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            text-align: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Scroll to Top */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: white;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            transition: all 0.3s;
+            font-size: 1.5rem;
+        }
+
+        .scroll-top.show {
+            display: flex;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Fade In */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 4rem;
+            }
+
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid,
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .about-images {
+                height: 500px;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+
+            .top-bar-left,
+            .top-bar-right {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 0;
+                flex-direction: column;
+                background: var(--white);
+                width: 100%;
+                height: 100vh;
+                padding-top: 100px;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            /* Mobile responsive quote button - SMALLER */
+            .quote-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+            }
+
+            .hero {
+                height: 80vh;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            /* Mobile responsive buttons */
+            .btn {
+                padding: 1rem 2rem;
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .stats-container,
+            .services-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .about-images {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            /* Extra small mobile - even smaller button */
+            .quote-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.75rem;
+            }
+
+            .whatsapp-float,
+            .scroll-top {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+917080130087">📞 7080130087</a>
+                <a href="mailto:info@ggbuilders.com">📧 info@ggbuilders.com</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#">📍 R2WH+CV Lucknow, Uttar Pradesh</a>
+                <a href="#">⏰ Mon - Sat: 9:00 AM - 7:00 PM</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">GG</div>
+                <div class="logo-text">
+                    <h1>GG BUILDERS</h1>
+                    <p>Building Excellence</p>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="quote-btn">Get Quote</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&h=1080&fit=crop" alt="Construction">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&h=1080&fit=crop" alt="Building">
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop" alt="Construction Site">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-label">Professional Builders in Lucknow</div>
+            <h1 class="hero-title">Building Your <span class="highlight">Future</span><br>With Excellence</h1>
+            <p class="hero-description">Leading builders and construction company in Lucknow. We deliver quality construction projects with precision, expertise and commitment.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="400">0+</div>
+                <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="600">0+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="75">0+</div>
+                <div class="stat-label">Expert Team</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">About Us</div>
+                <h2 class="section-title">Lucknow's Premier Construction Company</h2>
+                <p class="section-description">Building trust and quality structures for over 15 years in Lucknow and across Uttar Pradesh.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-images fade-in">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop" alt="Construction">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop" alt="Team">
+                    </div>
+                    <div class="about-badge">
+                        <div class="about-badge-number">15+</div>
+                        <div class="about-badge-text">Years Strong</div>
+                    </div>
+                </div>
+
+                <div class="about-content fade-in">
+                    <h3>Excellence in Construction</h3>
+                    <p>GG Builders is a leading construction company based in Lucknow, Uttar Pradesh. With over 15 years of excellence in the construction industry, we have established ourselves as the most trusted name for quality building and construction services.</p>
+                    <p>Our expertise spans across residential buildings, commercial complexes, industrial structures, and infrastructure projects. We combine traditional craftsmanship with modern construction technology to deliver projects that stand the test of time.</p>
+                    <p>Every project we undertake reflects our commitment to quality, safety, and customer satisfaction. Our skilled workforce and state-of-the-art equipment ensure that we deliver exceptional results on every project.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Premium Quality</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Skilled Workforce</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Timely Delivery</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">Best Pricing</div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Services</div>
+                <h2 class="section-title">Construction Solutions</h2>
+                <p class="section-description">Comprehensive building and construction services for all your needs in Lucknow.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Residential">
+                        <div class="service-number">01</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Residential Building</h3>
+                        <p>Custom homes, apartments, and residential complexes built to your specifications with quality materials and expert craftsmanship.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Commercial">
+                        <div class="service-number">02</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Commercial Construction</h3>
+                        <p>Office buildings, retail spaces, and commercial complexes designed for business success and functionality.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop" alt="Industrial">
+                        <div class="service-number">03</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Industrial Projects</h3>
+                        <p>Warehouses, factories, and industrial facilities built with robust structures and modern engineering.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop" alt="Renovation">
+                        <div class="service-number">04</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Renovation Services</h3>
+                        <p>Complete renovation and remodeling services to upgrade and modernize your existing properties.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop" alt="Infrastructure">
+                        <div class="service-number">05</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Infrastructure Development</h3>
+                        <p>Roads, bridges, and infrastructure projects executed with precision and engineering excellence.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Consultation">
+                        <div class="service-number">06</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Construction Consultation</h3>
+                        <p>Expert consultation services for planning, design, and execution of your construction projects.</p>
+                        <a href="#" class="service-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Our Work</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Explore our portfolio of successfully completed construction projects across Lucknow.</p>
+            </div>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" alt="Villa">
+                    <div class="project-overlay">
+                        <span class="project-category">Residential</span>
+                        <h3 class="project-title">Premium Villa</h3>
+                        <p class="project-location">Gomti Nagar, Lucknow</p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" alt="Office">
+                    <div class="project-overlay">
+                        <span class="project-category">Commercial</span>
+                        <h3 class="project-title">IT Office Complex</h3>
+                        <p class="project-location">Hazratganj, Lucknow</p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Apartment">
+                    <div class="project-overlay">
+                        <span class="project-category">Residential</span>
+                        <h3 class="project-title">Luxury Apartments</h3>
+                        <p class="project-location">Indira Nagar, Lucknow</p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="industrial">
+                    <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&h=400&fit=crop" alt="Warehouse">
+                    <div class="project-overlay">
+                        <span class="project-category">Industrial</span>
+                        <h3 class="project-title">Modern Warehouse</h3>
+                        <p class="project-location">Aliganj, Lucknow</p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=400&fit=crop" alt="Mall">
+                    <div class="project-overlay">
+                        <span class="project-category">Commercial</span>
+                        <h3 class="project-title">Shopping Mall</h3>
+                        <p class="project-location">Alambagh, Lucknow</p>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" alt="Bungalow">
+                    <div class="project-overlay">
+                        <span class="project-category">Residential</span>
+                        <h3 class="project-title">Modern Bungalow</h3>
+                        <p class="project-location">Jankipuram, Lucknow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Testimonials</div>
+                <h2 class="section-title">Client Reviews</h2>
+                <p class="section-description">Hear what our satisfied clients have to say about our work.</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">GG Builders constructed our home with exceptional quality and professionalism. They completed the project on time and within budget. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Client">
+                        <div class="author-info">
+                            <h4>Anil Sharma</h4>
+                            <p>Homeowner, Gomti Nagar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <span class="slider-dot active"></span>
+                    <span class="slider-dot"></span>
+                    <span class="slider-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Contact Us</div>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Ready to start your construction project? Contact us for a free consultation.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>R2WH+CV Lucknow<br>Uttar Pradesh<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>
+                                <a href="tel:+917080130087">7080130087</a><br>
+                                Mon - Sat: 9 AM - 7 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>
+                                <a href="mailto:info@ggbuilders.com">info@ggbuilders.com</a><br>
+                                <a href="mailto:projects@ggbuilders.com">projects@ggbuilders.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item fade-in">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday<br>9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in">
+                    <h3 class="form-title">Send Message</h3>
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service</label>
+                                <select id="service" name="service">
+                                    <option value="">Select Service</option>
+                                    <option value="residential">Residential Building</option>
+                                    <option value="commercial">Commercial Construction</option>
+                                    <option value="industrial">Industrial Projects</option>
+                                    <option value="renovation">Renovation Services</option>
+                                    <option value="infrastructure">Infrastructure</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>GG BUILDERS</h3>
+                <p>Professional builders and construction company in Lucknow. Building excellence with quality, trust and innovation since 2009.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="YouTube">🎥</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Residential Building</a></li>
+                    <li><a href="#services">Commercial Construction</a></li>
+                    <li><a href="#services">Industrial Projects</a></li>
+                    <li><a href="#services">Renovation</a></li>
+                    <li><a href="#services">Infrastructure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 GG Builders. All Rights Reserved. Proudly Serving Lucknow.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/917080130087" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        💬
+    </a>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top" id="scrollTop">
+        ↑
+    </div>
+
+    <script>
+        // Mobile Menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Hero Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(nextSlide, 5000);
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Fade In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Counter Animation
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + '+';
+                }
+            }, 30);
+        }
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    animateCounter(entry.target, target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            statsObserver.observe(stat);
+        });
+
+        // Projects Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Testimonial Slider
+        const testimonials = [
+            {
+                text: "GG Builders constructed our home with exceptional quality and professionalism. They completed the project on time and within budget. Highly recommended!",
+                name: "Anil Sharma",
+                role: "Homeowner, Gomti Nagar",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+            },
+            {
+                text: "Excellent work quality and professional team. They built our office complex with great attention to detail. Very satisfied with their services.",
+                name: "Meera Patel",
+                role: "Business Owner, Hazratganj",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+            },
+            {
+                text: "Best construction company in Lucknow! Their industrial project work is outstanding. Reliable, efficient and delivers on promises.",
+                name: "Vijay Singh",
+                role: "Factory Owner, Aliganj",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop"
+            }
+        ];
+
+        let currentTestimonial = 0;
+        const testimonialCard = document.querySelector('.testimonial-card');
+        const dots = document.querySelectorAll('.slider-dot');
+
+        function updateTestimonial(index) {
+            const testimonial = testimonials[index];
+            
+            testimonialCard.style.opacity = '0';
+            
+            setTimeout(() => {
+                testimonialCard.innerHTML = `
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">${testimonial.text}</p>
+                    <div class="testimonial-author">
+                        <img src="${testimonial.image}" alt="${testimonial.name}" class="author-image">
+                        <div class="author-info">
+                            <h4>${testimonial.name}</h4>
+                            <p>${testimonial.role}</p>
+                        </div>
+                    </div>
+                `;
+                testimonialCard.style.opacity = '1';
+            }, 300);
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentTestimonial = index;
+                updateTestimonial(currentTestimonial);
+            });
+        });
+
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            updateTestimonial(currentTestimonial);
+        }, 6000);
+
+        // Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            successMessage.classList.add('show');
+            contactForm.reset();
+            
+            setTimeout(() => {
+                successMessage.classList.remove('show');
+            }, 5000);
+        });
+
+        // Scroll to Top
+        const scrollTop = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.boxShadow = '0 4px 35px rgba(0,0,0,0.15)';
+            } else {
+                navbar.style.boxShadow = '0 2px 25px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
